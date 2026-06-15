@@ -24,10 +24,6 @@
   <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
 
-  <button id="admin-login-btn">
-    Iniciar sesión
-</button>
-  
   <script>
     tailwind.config = {
       darkMode: 'class',
@@ -226,6 +222,13 @@
       </div>
       <!-- Header -->
       <div class="p-4 border-b border-slate-200 dark:border-slate-700">
+        <button
+  id="adminLoginBtn"
+  onclick="adminLogin()"
+  class="mb-3 px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white rounded-lg text-sm font-medium"
+>
+  Iniciar sesión
+</button>
         <div class="flex items-center justify-between">
           <div class="flex items-center gap-2">
             <div class="w-10 h-10 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center shadow-lg">
